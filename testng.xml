@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AllTestSuite">
+    <test verbose="2" preserve-order="true" name="/Users/camilo.duran/pruebaTecnicaFront">
+        <classes>
+            <class name="test.TestCase001">
+                <methods><include name="test_validateLoginProcess"/></methods></class>
+            <class name="test.TestCase002">
+                <methods><include name="validate_IncorrectEmailAndPasswordLoginProcess"/></methods></class>
+            <class name="test.TestCase003">
+                <methods><include name="test_validateEmptySearchBar"/></methods></class>
+            <class name="test.TestCase004">
+                <methods><include name="test_SearchForAirpodsPro"/></methods></class>
+            <class name="test.TestCase005">
+                <methods><include name="test_searchAndAddProductToCart"/></methods></class>
+        </classes>
+    </test>
+</suite>
