@@ -17,10 +17,13 @@ public class HomePage extends BasePage{
     @FindBy(xpath = "//div[@id='testId-UserAction-userinfo']")
     private WebElement loginUserHomeButton;
 
-    @FindBy(xpath = "//div[@id='testId-UserAction-userinfo']")
+    @FindBy(xpath = "//div[@class='UserInfo-module_info__name__2L1i6 ']")
     private WebElement logInHiddenMenu;
 
-    @FindBy(xpath = "//div[contains(@class, 'overlay') and normalize-space(.)='Inicia sesión']")
+    @FindBy(xpath = "//div[@class='Popover-module_popover__2BK5J UserInfo-module_loggedin-modal__RbQOQ']")
+    private WebElement userInfoPopoverModule;
+
+    @FindBy(xpath = "//*[@id='testId-loggedout-item-0']")
     private WebElement logInOption;
 
     @FindBy(xpath = "//input[@id='testId-cc-login-form-email-input']")
@@ -128,6 +131,15 @@ public class HomePage extends BasePage{
         new ResultPage();
     }
 
+    //Clicks on Log In Option from Pop Over Menu
+    public void clickLogInOption() {
+        clickWebElement(logInOption);
+    }
+
+    public void moveMouseToLoginHiddenMenu() {
+        actions.moveToElement(logInHiddenMenu).perform();
+    }
+
     //Sends ENTER key while on the search bar (Works as secondary option to click search button)
     public void sendEnterKeyInSearchBar() {
         sendKeysWebElement(searchBar, String.valueOf(Keys.ENTER));
@@ -138,6 +150,9 @@ public class HomePage extends BasePage{
     public void waitDisplayedLogInForm() {
         waitDisplayedElement(loginForm);
     }
+
+    //Waits for User Module Pop Over
+    public void waitDisplayedUserModule() { waitDisplayedElement(userInfoPopoverModule); }
 
     //Clicks CMR Pop Up Message if displayed
     public void clickCmrPopupMessageIfDisplayed() {

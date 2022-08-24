@@ -13,7 +13,9 @@ public class TestCase001 extends BaseTest{
     @Test
     public void test_validateLoginProcess() {
         homePage.clickCMR_PopUpAdButton();
-        homePage.clickMyOrdersButton();
+        homePage.moveMouseToLoginHiddenMenu();
+        homePage.waitDisplayedUserModule();
+        homePage.clickLogInOption();
         homePage.waitDisplayedLogInForm();
         homePage.sendEmailLoginForm();
         homePage.sendPasswordLoginForm();
