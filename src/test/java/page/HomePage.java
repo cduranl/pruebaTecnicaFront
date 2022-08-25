@@ -107,7 +107,7 @@ public class HomePage extends BasePage{
 
     //Sends correct password to login password text box
     public void sendPasswordLoginForm() {
-        sendKeysWebElement(loginPasswordTextBox, "pL26cL02$");
+        sendKeysWebElement(loginPasswordTextBox, "Password123");
     }
 
     //Sends incorrect password to login password text box
