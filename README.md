@@ -24,3 +24,5 @@ para lanzar los test:
   
   
  #### Estructura del proyecto
+
+- La estructura del proyecto esta basadao en maven, la cual se encuentra desarrollado con el lenguaje JAVA utilizando selenium.
