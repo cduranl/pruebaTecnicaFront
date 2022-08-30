@@ -53,7 +53,7 @@ public class Driver {
 
     public static void closeDriver() {
         if (driver != null) {
-            driver.close();//quit();
+            driver.close(); //quit();
             driver = null;
         }
     }

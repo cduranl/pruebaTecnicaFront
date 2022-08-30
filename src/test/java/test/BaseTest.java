@@ -3,17 +3,19 @@ package test;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
-import page.AirPodsProProductPage;
-import page.HomePage;
-import page.ResultPage;
+import page.*;
 import util.Driver;
 
 public class BaseTest {
 
     private HomePage homePage;
+    private AirPodsProProductPage podsProProductPage;
+    private CartPage cartPage;
+    private RegisterPage registerPage;
+    private ResultPage resultPage;
 
     @BeforeClass
-    public static void beforeTest(){
+    public void beforeTest(){ //Was static before
         if(Driver.getDriver() == null){
             Driver.initializeDriver();
         }

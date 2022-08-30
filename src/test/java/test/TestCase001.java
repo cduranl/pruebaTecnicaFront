@@ -8,7 +8,6 @@ public class TestCase001 extends BaseTest{
 
     HomePage homePage = new HomePage();
 
-
     //Test validates the login process with an existing account
     @Test
     public void test_validateLogFormIsDisplayed() {
