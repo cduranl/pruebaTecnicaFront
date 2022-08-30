@@ -30,13 +30,14 @@ con TestNG, donde se encuentran 5 test cases cada una con su respectiva nombre '
 encuentran en un test suite bajo el nombre 'AllTestSuite'. Cada test case lleva su correspondiente ID la cual lo identifica en 
 el documento de diseño y análisis.
 
-    1. TestCase001 (CP_001): Verificar el login de la página web.
-    2. TestCase002 (CP_002): Verificar el login de la página web con password incorrecta.
+    1. TestCase001 (CP_001): Validar que se muestra el formulario del login.
+    2. TestCase002 (CP_002): Validar que se muestra el formulario de registrarse.
     3. TestCase003 (CP_003): Validar una busqueda vacia en la barra de busqueda de productos.
     4. TestCase004 (CP_004): Validar la busqueda de un producto en la barra de busqueda de productos.
     5. TestCase005 (CP_005): Validar que se agrega un producto al carrito de compras.
     
  **_Posibles Bugs y Errores:_**
  
- - Al ingresar datos de una cuenta para validar un login mediante un navegador automatizado nos tira un error del sistema la cual
- no nos permite acceso a la cuenta de la página.
+    1. Al ingresar datos de una cuenta para validar un login mediante un navegador automatizado nos tira un error del sistema la cual
+       no nos permite acceso a la cuenta de la página.
+            a. Se quitaron estos tests y se reemplazaron por 2 nuevos tests.
