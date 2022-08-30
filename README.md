@@ -38,6 +38,6 @@ el documento de diseño y análisis.
     
  **_Posibles Bugs y Errores:_**
  
-    1. Al ingresar datos de una cuenta para validar un login mediante un navegador automatizado nos tira un error del sistema la cual
-       no nos permite acceso a la cuenta de la página.
+   1. Al ingresar datos de una cuenta para validar un login mediante un navegador automatizado nos tira un error del sistema la cual
+      no nos permite acceso a la cuenta de la página.
             a. Se quitaron estos tests y se reemplazaron por 2 nuevos tests.
