@@ -4,9 +4,9 @@
     <test verbose="2" preserve-order="true" name="/Users/camilo.duran/pruebaTecnicaFront">
         <classes>
             <class name="test.TestCase001">
-                <methods><include name="test_validateLoginProcess"/></methods></class>
+                <methods><include name="test_validateLogFormIsDisplayed"/></methods></class>
             <class name="test.TestCase002">
-                <methods><include name="validate_IncorrectEmailAndPasswordLoginProcess"/></methods></class>
+                <methods><include name="test_RegisterPageIsDisplayed"/></methods></class>
             <class name="test.TestCase003">
                 <methods><include name="test_validateEmptySearchBar"/></methods></class>
             <class name="test.TestCase004">

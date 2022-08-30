@@ -26,6 +26,9 @@ public class HomePage extends BasePage{
     @FindBy(xpath = "//*[@id='testId-loggedout-item-0']")
     private WebElement logInOption;
 
+    @FindBy(xpath = "//*[@id='testId-loggedout-item-1']")
+    private WebElement registerOption;
+
     @FindBy(xpath = "//input[@id='testId-cc-login-form-email-input']")
     private WebElement loginEmailTextBox;
 
@@ -40,6 +43,9 @@ public class HomePage extends BasePage{
 
     @FindBy(xpath = "//div/p[@class='UserInfo-module_display1__1TD_E']")
     private WebElement userNameAccount;
+
+    @FindBy( xpath = "//div[@class='jsx-55450280']")
+    private WebElement registerPageTitleLabel;
 
     @FindBy(xpath = "//input[@id='testId-SearchBar-Input']")
     private WebElement searchBar;
@@ -66,6 +72,12 @@ public class HomePage extends BasePage{
     @FindBy(xpath = "//div[@class='Search-module_header__1K8Ze']")
     private WebElement popUpSearchBarEmpty;
 
+    //Validates if Register Page Title Label is displayed
+    public boolean validateRegisterPageTitleLabelAppears() { return isDisplayedWebElement(registerPageTitleLabel); }
+
+    //Validates if Login Form is displayed
+    public boolean validateLoginFormIsDisplayed() { return isDisplayedWebElement(loginForm); }
+
     //Validates if Error Pop Up Message is displayed
     public boolean validateErrorPopUpMessageAppears() { return isDisplayedWebElement(popUpSearchBarEmpty); }
 
@@ -78,6 +90,12 @@ public class HomePage extends BasePage{
     //Wait for element to be displayed
     public void waitNoThanksOfferBtn() {
         waitDisplayedElement(noThanksBestOffersBtn);
+    }
+
+    //Clicks register option in hidden menu
+    public void clickRegisterOption() {
+        clickWebElement(registerOption);
+        new RegisterPage();
     }
 
     //Clicks exit button upon arrival of the web page.

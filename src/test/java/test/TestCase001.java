@@ -11,16 +11,13 @@ public class TestCase001 extends BaseTest{
 
     //Test validates the login process with an existing account
     @Test
-    public void test_validateLoginProcess() {
+    public void test_validateLogFormIsDisplayed() {
         homePage.clickCMR_PopUpAdButton();
         homePage.moveMouseToLoginHiddenMenu();
         homePage.waitDisplayedUserModule();
         homePage.clickLogInOption();
         homePage.waitDisplayedLogInForm();
-        homePage.sendEmailLoginForm();
-        homePage.sendPasswordLoginForm();
-        homePage.clickLoginFormSubmitBtn();
-        Assert.assertTrue(homePage.validateUsernameIsDisplayedOnHomepage(), "User logged in is correct.");
+        Assert.assertTrue(homePage.validateLoginFormIsDisplayed(), "Login form is displayed correctly.");
         closeBrowser();
     }
 }
