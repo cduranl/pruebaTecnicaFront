@@ -1,9 +1,11 @@
 package test;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import page.HomePage;
 
+//@Listeners(test.TestListeners.class)
 public class TestCase001 extends BaseTest{
 
     HomePage homePage = new HomePage();
