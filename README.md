@@ -51,6 +51,6 @@ el documento de diseño y análisis.
 
 - El proyecto tiene incluido una visión general básica del test suite ejecutado utilizando la herramienta de Allure Report.
 
-    1. Para Lanzar la reportería desde consola debes utilziar el siguiente comando:
+    - Para Lanzar la reportería desde consola debes utilziar el siguiente comando:
     
-    allure serve 'ruta de la carpeta [allure-results] dentro del proyecto'
+        allure serve 'ruta de la carpeta [allure-results] dentro del proyecto'
