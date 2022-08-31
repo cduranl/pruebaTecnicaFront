@@ -45,7 +45,7 @@ After cloning the project you can use the following commands within the terminal
 
 1. To run the Allure Report use the following command:
     
-    allure serve 'ruta de la carpeta [allure-results] dentro del proyecto'
+    allure serve '[directory-path-of-project]/allure-results'
   
   
     
