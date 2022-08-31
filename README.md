@@ -23,7 +23,7 @@ para lanzar los test:
   *Importante reemplazar el 'n' por un numero entre 1 al 5, dependiendo cual test case deseas lanzar.*
   
   
- #### Estructura del proyecto
+ #### Estructura del proyecto:
 
 - La estructura del proyecto esta basadao en maven, la cual se encuentra desarrollado con el lenguaje JAVA utilizando selenium 
 con TestNG, donde se encuentran 5 test cases cada una con su respectiva nombre 'TestCase00X', (X = 1 al 5), estos test case se 
@@ -40,4 +40,17 @@ el documento de diseño y análisis.
  
    1. Al ingresar datos de una cuenta para validar un login mediante un navegador automatizado nos tira un error del sistema la cual
       no nos permite acceso a la cuenta de la página.
-      - Se quitaron estos tests y se reemplazaron por 2 nuevos tests.
+      - _Update: Se quitaron estos tests y se reemplazaron por 2 nuevos tests._
+   
+   2. Al lanzar el test suite se aprueba el primer test case y suelen fallar las siguientes test case, en este caso cuando se lanzan
+      los test case individualmente cada una de estas aprueban sus validaciones.
+      - _El error que nos indica: NoSuchSessionException: invalid session id_
+      
+  
+#### Allure Report:
+
+- El proyecto tiene incluido una visión general básica del test suite ejecutado utilizando la herramienta de Allure Report.
+
+    - Para Lanzar la reportería desde consola debes utilziar el siguiente comando:
+    
+        allure serve 'ruta de la carpeta [allure-results] dentro del proyecto'
