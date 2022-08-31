@@ -26,7 +26,8 @@ para lanzar los test:
  #### Estructura del proyecto:
 
 - La estructura del proyecto esta basadao en maven, la cual se encuentra desarrollado con el lenguaje JAVA utilizando selenium 
-con TestNG, donde se encuentran 5 test cases cada una con su respectiva nombre 'TestCase00X', (X = 1 al 5), estos test case se 
+con TestNG, sus respectivas Listeners (ITestListeners), y finalmente con una herramienta de reporteria, donde se encuentran 5 
+test cases cada una con su respectiva nombre 'TestCase00X', (X = 1 al 5), estos test case se 
 encuentran en un test suite bajo el nombre 'AllTestSuite'. Cada test case lleva su correspondiente ID la cual lo identifica en 
 el documento de diseño y análisis.
 
