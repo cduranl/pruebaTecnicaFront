@@ -40,7 +40,11 @@ el documento de diseño y análisis.
  
    1. Al ingresar datos de una cuenta para validar un login mediante un navegador automatizado nos tira un error del sistema la cual
       no nos permite acceso a la cuenta de la página.
-      - Se quitaron estos tests y se reemplazaron por 2 nuevos tests.
+      - _Update: Se quitaron estos tests y se reemplazaron por 2 nuevos tests._
+   
+   2. Al lanzar el test suite se aprueba el primer test case y suelen fallar las siguientes test case, en este caso cuando se lanzan
+      los test case individualmente cada una de estas aprueban sus validaciones.
+      - _El error que nos indica: NoSuchSessionException: invalid session id_
       
   
 #### Allure Report:
